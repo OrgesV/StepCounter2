@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4263"
+    tools:context=".Hub">
+
+    <Button
+        android:id="@+id/music_button"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginBottom="82dp"
+        android:text="MUSIC"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintStart_toStartOf="@+id/support_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="87dp"
+        android:text="REGISTER"
+        app:layout_constraintBaseline_toBaselineOf="@+id/personal_button"
+        app:layout_constraintEnd_toStartOf="@+id/personal_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/support_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginBottom="82dp"
+        android:text="SUPPORT"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toStartOf="@+id/personal_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_button"
+        android:layout_marginLeft="87dp" />
+
+    <Button
+        android:id="@+id/personal_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="87dp"
+        android:text="PERSONAL"
+        app:layout_constraintBottom_toTopOf="@+id/support_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/support_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="87dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:text="LOG IN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
